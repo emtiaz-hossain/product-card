@@ -1,0 +1,116 @@
+/* - Family: [Montserrat] (500, 700)*/ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* - Family: [Fraunces] (700)*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ---------------css variable------------------ */
+
+:root{
+    --bg-clr: hsl(30, 38%, 92%);
+    --theme-clr: hsl(158, 36%, 37%);
+    --text-clr: hsl(228, 12%, 48%);
+    --card-bg: hsl(0, 0%, 100%);
+    --heading-clr: hsl(212, 21%, 14%);
+    --hover-clr: hsl(160, 41%, 24%);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 30rem;
+    height: 22rem;
+    background-color: var(--card-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    background-color: royalblue;
+    background-image: url(/images/image-product-desktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px 0px 0px 10px ;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+.price{
+    font-size: 2rem;
+    color: var(--theme-clr);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    font-family: Fraunces;
+    font-weight: 700;
+}
+.discount{
+    text-decoration: line-through;
+    color: var(--text-clr);
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+.card h5{
+    font-family: Montserrat;
+    font-weight: 500;
+    letter-spacing: .3rem;
+    font-size: 15px;
+    color: var(--text-clr);
+}
+.btn{
+    background-color: var(--theme-clr);
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 0;
+    color: var(--card-bg);
+    text-decoration: none;
+    font-family: Montserrat;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--hover-clr);
+    transition: 0.5s;
+}
+.card h1{
+    font-family: Fraunces;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.card p{
+    font-size: 14px;
+    width: 100%;
+    color: var(--text-clr);
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 1rem;
+    word-spacing: .3rem;
+}
+.btn i{
+    margin-right: .4rem;
+    font-size: .8em;
+}
+
